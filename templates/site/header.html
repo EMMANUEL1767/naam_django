@@ -16,10 +16,10 @@
 
                         <div class="collapse navbar-collapse" id="menucontent">
                             <ul class="navbar-nav ml-auto">
-                                <li class="nav-item {% ifequal current_screen 'index' %} active {% endifequal %}"><a class="nav-link" href="/">Home</a></li>
-                                <li class="nav-item {% ifequal current_screen 'about-us' %} active {% endifequal %}"><a class="nav-link" href="/about-us">About</a></li>
-                                <li class="nav-item {% ifequal current_screen 'events' %} active {% endifequal %}"><a class="nav-link" href="/events">Events</a></li>
-                                <li class="nav-item {% ifequal current_screen 'gallery' %} active {% endifequal %}"><a class="nav-link" href="/gallery">Gallery</a></li>
+                                <li class="nav-item {% if current_screen == 'index' %} active {% endif %}"><a class="nav-link" href="/">Home</a></li>
+                                <li class="nav-item {% if current_screen == 'about-us' %} active {% endif %}"><a class="nav-link" href="/about-us">About</a></li>
+                                <li class="nav-item {% if current_screen == 'events' %} active {% endif %}"><a class="nav-link" href="/events">Events</a></li>
+                                <li class="nav-item {% if current_screen == 'gallery' %} active {% endif %}"><a class="nav-link" href="/gallery">Gallery</a></li>
 <!--                                <li class="nav-item dropdown">-->
 <!--                                    <a class="nav-link dropdown-toggle" href="blog.html" data-toggle="dropdown" role="button">Blog</a>-->
 <!--                                    <ul class="dropdown-menu">-->
@@ -46,8 +46,8 @@
 <!--                                        <li class="nav-item"><a class="nav-link" href="typography.html">Typography</a></li>-->
 <!--                                    </ul>-->
 <!--                                </li>-->
-                                <li class="nav-item {% ifequal current_screen 'career' %} active {% endifequal %}"><a class="nav-link" href="/career">Career</a></li>
-                                <li class="nav-item{% ifequal current_screen 'contact-us' %} active {% endifequal %}"><a class="nav-link" href="/contact-us">Contact</a></li>
+                                <li class="nav-item {% if current_screen == 'career' %} active {% endif %}"><a class="nav-link" href="/career">Career</a></li>
+                                <li class="nav-item {% if current_screen == 'contact-us' %} active {% endif %}"><a class="nav-link" href="/contact-us">Contact</a></li>
                             </ul>
                         </div>
                     </nav>
